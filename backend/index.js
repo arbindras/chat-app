@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 const corsOption = {
-  origin: "https://chat-app-frontend-16sxfgnx6-arbindras-projects.vercel.app",
+  origin: "https://chat-app-frontend-alpha-drab.vercel.app",
   credentials: true,
 };
 app.use(cors(corsOption));
