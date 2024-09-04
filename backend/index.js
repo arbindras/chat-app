@@ -19,6 +19,7 @@ const corsOption = {
   credentials: true,
 };
 app.use(cors(corsOption));
+app.options("*", cors(corsOptions)); // Preflight request handling
 
 // routes
 app.use("/api/v1/user", userRoute);
